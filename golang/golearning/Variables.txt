@@ -1,0 +1,34 @@
+Variables:
+
+var declares 1 or more variables.
+
+You can declare multiple variables at once.
+
+Go will infer the type of initialized variables.
+
+Variables declared without a corresponding initialization are zero-valued. For example, the zero value for an int is 0.
+
+The := syntax is shorthand for declaring and initializing a variable, e.g. for var f string = "apple" in this case.
+
+Variable Scope:
+
+Local Variables(Declared Inside a block or a function)
+Global Variables(Declared outside a block or a function)
+
+
+Local Variables
+
+Variables that are declared inside a function or a block are termed as Local variables. These are not accessible outside the function or block.
+These variables can also be declared inside the for, while statement etc. inside a function.
+However, these variables can be accessed by the nested code blocks inside a function.
+These variables are also termed as the block variables.
+There will be a compile-time error if these variables are declared twice with the same name in the same scope.
+These variables don’t exist after the function’s execution is over.
+The variable which is declared outside the loop is also accessible within the nested loops. It means a global variable will be accessible to the methods and all loops. The local variable will be accessible to loop and function inside that function.
+A variable which is declared inside a loop body will not be visible to the outside of loop body.
+
+Global Variables
+The variables which are defined outside of a function or a block is termed as Global variables.
+These are available throughout the lifetime of a program.
+These are declared at the top of the program outside all of the functions or blocks.
+These can be accessed from any portion of the program.
