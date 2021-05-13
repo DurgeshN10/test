@@ -1,0 +1,47 @@
+Go anguage
+Creators Robert griesemar
+Rob pike
+
+Why created
+Phython easy to use but slow
+Java complex type system
+C++ slow 
+
+Go (GOLANG)
+Strong and statically type
+Excellent community
+KEY Features = simplicity, fast compile time, garbage collected,built-in concurrency
+		Compile to standalone binaries.
+installation 
+download windows installer
+c/windows/go
+usr
+chose default location
+
+edit vim .bashrc/bashprofile osx
+environment variable
+export GOROOT=/usr/locsl/go
+export path=$path:@goroot/bin
+export GOPATH=/home/name/golib 
+export path=$path:@gopath/bin
+
+go get github.com/nsf/gocode
+export GOPATH = @GOPATH:home/name/code
+
+
+first module:
+fmt stands for format.
+	 
+
+declaring variable
+
+var is important
+default value integer 0 
+
+shadowing
+
+
+
+
+
+

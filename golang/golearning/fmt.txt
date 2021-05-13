@@ -1,0 +1,29 @@
+FMT package
+
+Package fmt implements formatted I/O with functions analogous to C's printf and scanf. The format 'verbs' are derived from C's but are simpler.
+
+Genaral 
+%v : the value in a default format
+     + flags adds field names (%+v)
+
+%T : Represents type of the value
+
+%% : A litteral percent sign; consumes no value.
+
+%#v : representation of value
+
+
+boolean 
+%t : true or false
+
+integer
+
+%b base 2
+%c it represent by  the corresponding unbicode point
+%d base 10
+%o base 8
+%O base 8 with 0o prefix
+%q a singal quated character literal safly escape with go syntax
+%x base 16 with lower case letter a to z
+%X base 16 with upper case letter A to Z
+%U unicode format : U+123; same as "U+%04X"
