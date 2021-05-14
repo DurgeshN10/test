@@ -17,3 +17,59 @@ func main() {
 	}
 }
 
+
+
+package main
+
+import (
+	"fmt"
+)
+
+func greeting(callback func()){
+	callback()
+	callback()
+	callback()
+	}
+
+func main() {
+	greeting(func() { fmt.Println("Hello,how u doing")})
+	fmt.Println("now!")
+	}
+	
+
+. Write a program that prints out all the numbers
+evenly divisible by 3 between 1 and 100. (3, 6, 9,
+etc.)
+
+package main
+import("fmt")
+func main(){
+var i int
+	for i=1;i<=100;i++ {
+		if i%3 == 0 {
+		fmt.Print("\n",i)
+		}
+	} 	
+}
+
+
+Write a program that prints the numbers from 1
+to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five
+print "Buzz". For numbers which are multiples
+of both three and five print "FizzBuzz".
+
+package main
+import("fmt")
+func main(){
+var i int
+	for i=1;i<=100;i++ {
+		if i%15 == 0 {
+		fmt.Print("\n","fizzBuzz")
+		}else if i%5 == 0{
+			fmt.Print("\n","buzz")
+		}else if i%3 == 0{
+		fmt.Print("\n","fizz")
+		}else{fmt.Print("\n",i)}
+	} 	
+}
+
