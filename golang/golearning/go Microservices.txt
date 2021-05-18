@@ -1,0 +1,27 @@
+setting up server:web 
+
+"net/http"This package allows you to build HTTP servers in Go with its powerful compositional constructs.
+
+The http.ListenAndServe function is used to start the server, it will bind to the address we gave it (:8080) and when it receives an HTTP request, it will hand it off to the http.Handler that we supply as the second argument.
+The http.FileServer function builds an http.Handler that will serve an entire directory of files and figure out which file to serve based on the request path. We told the FileServer to serve the current working directory
+
+"nil"
+nil is a predeclared identifier in Go that represents zero values for pointers, interfaces, channels, maps, slices and function types. nil being the zero value of pointers and interfaces, uninitialized pointers and interfaces will be nil.So does that mean a string can’t be nil, yes you are right, a string doesn’t qualify to be either of the above-mentioned types and hence can’t be assigned nil.
+
+
+import (
+	"log"
+	"net/http"
+)
+
+func main() {
+
+	go http.HandleFunc("/", func(http.ResponseWriter, *http.Request) {
+		log.Println("hello world")
+	})
+	go http.ListenAndServe(":8080", nil)
+}
+
+
+go run main.go 
+curl -v localhost:8080 or http://localhost:8080

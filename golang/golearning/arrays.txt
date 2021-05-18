@@ -1,0 +1,19 @@
+ARRAYS
+
+store a collection of data of the same type.
+ An array is a fixed-length sequence that is used to store homogeneous elements in the memory. Due to their fixed length array are not much popular like Slice in Go language.
+
+You can access the elements of the array by using the index value or by using for loop.
+In Go language, the array type is one-dimensional.
+The length of the array is fixed and unchangeable.
+You are allowed to store duplicate elements in an array.
+
+In an array, if an array does not initialized explicitly, then the default value of this array is 0.
+
+In an array, if ellipsis ‘‘…’’ become visible at the place of length, then the length of the array is determined by the initialized elements.
+
+In an array, you are allowed to iterate over the range of the elements of the array.
+
+In Go language, an array is of value type not of reference type. So when the array is assigned to a new variable, then the changes made in the new variable do not affect the original array.
+
+In an array, if the element type of the array is comparable, then the array type is also comparable. So we can directly compare two arrays using == operator.
