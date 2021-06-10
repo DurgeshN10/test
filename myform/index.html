@@ -1,0 +1,223 @@
+<!doctype html>
+
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en"> 
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sangram | form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta httpequiv="Content-Type" content="text/html">
+    <meta name="description" content= "metaDescriptions" />
+    <meta property="og:title" content="headline" />
+    <meta property="og:type" content="Article" />
+    <!-- <meta property="og:url" content="https://durgeshn10.github.io/" />  -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+ 
+  </head>
+
+  <body>
+    <!--container start-->
+    <div class="container">
+      <!--header section start-->
+      <header>
+        <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="wrapper">
+          <div class="top-flex">
+            <div class="social-links">
+              <ul>
+                <li>
+                  <a href="#FIXME" title="Facebook" target="_blank" class="fab fa-facebook-f">
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#FIXME" title="Twitter" target="_blank" class="fab fa-twitter">
+                    <span>Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#FIXME" title="Instagram" target="_blank" class="fab fa-instagram">
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#FIXME" title="Dribbble" target="_blank" class="fab fa-dribbble">
+                    <span>Dribbble</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitelogo">
+              <figure>
+                <h1>
+                  <a href="./index.html" title="Home">
+                    <img src="./assets/images/logo.png" alt="Sangram marine">
+                  </a>
+                </h1>
+              </figure>
+            </div>
+            <div class="search-area">
+              <input type="text" placeholder="Search" title="Search">
+              <button title="Search" class="search-button fa fa-search">
+                <span>Search</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="wrapper">
+          <ul>
+            <li>
+              <a href="#fIXME" title="Home" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="About Us">About Us</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Services">Services</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Blog">Career</a>
+            </li>
+            <li>
+              <a href="#FIXME" title="Contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger" title="Menu">
+        <a class="fa fa-bars">
+          <span>Hamburger</span>
+        </a>
+      </div>
+        
+      </header>
+      <!--header section end-->
+      <!--main section start-->
+      <main>
+      <!-- Gallery Banner Section -->
+      <section class="gallery-banner">
+        <div class="wrapper">
+          <div class="banner-content">
+            <h2>Gallery</h2>
+            <p>
+              <a href="./index.html" title="Home">
+                Home
+                <span class="fa fa-chevron-right">chevron-right</span>
+              </a>
+              <a href="./gallery.html" title="Gallery">
+                Gallery
+                <span class="fa fa-chevron-right">chevron-right</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery Section -->
+      <section class="gallery">
+        <div class="wrapper">
+          <h3>Gallery</h3>
+          <div class="gallery-flex">
+            <figure onclick="openModal(); currentImage(1)">
+              <img src="https://via.placeholder.com/450x282/757575?text=Image1" alt="Image 1">
+              <figcaption>
+                
+                <p>Office</p>
+              </figcaption>
+            </figure>
+            <figure onclick="openModal(); currentImage(2)">
+              <img src="https://via.placeholder.com/450x282/757575?text=Image2" alt="Image 2">
+              <figcaption>
+                
+                <p>office environment</p>
+              </figcaption>
+            </figure>
+            <figure onclick="openModal(); currentImage(3)">
+              <img src="https://via.placeholder.com/450x282/757575?text=Image3" alt="Image 3">
+              <figcaption>
+      
+                <p>LOGO</p>
+              </figcaption>
+            </figure>
+            <figure onclick="openModal(); currentImage(4)">
+              <img src="https://via.placeholder.com/450x282/757575?text=Image4" alt="Image 4">
+              <figcaption>
+                Nature
+                <p>Beautiful Work</p>
+              </figcaption>
+            </figure>
+            <figure onclick="openModal(); currentImage(5)">
+              <img src="https://via.placeholder.com/450x282/757575?text=Image5" alt="Image 5">
+              <figcaption>
+                Nature
+                <p>Beautiful Work</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- Lightbox -->
+      <div class="lightbox">
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()" title="Close">&times;</span>
+          <div class="modal-content">
+            <!-- Slides / Carousel -->
+            <figure class="myImages fade">
+              <div class="numbertext">1 of 5</div>
+              <img src="https://via.placeholder.com/1920x1080?text=Image1" alt="Image 1">
+            </figure>
+            <figure class="myImages fade">
+              <div class="numbertext">2 of 5</div>
+              <img src="https://via.placeholder.com/1920x1080?text=Image2" alt="Image 2">
+            </figure>
+            <figure class="myImages fade">
+              <div class="numbertext">3 of 5</div>
+              <img src="https://via.placeholder.com/1920x1080?text=Image3" alt="Image 3">
+            </figure>
+            <figure class="myImages fade">
+              <div class="numbertext">4 of 5</div>
+              <img src="https://via.placeholder.com/1920x1080?text=Image4" alt="Image 4">
+            </figure>
+            <figure class="myImages fade">
+              <div class="numbertext">5 of 5</div>
+              <img src="https://via.placeholder.com/1920x1080?text=Image5" alt="Image 5">
+            </figure>
+            <!-- Next/previous controls -->
+            <a class="prev fa fa-caret-left" onclick="plusImages(-1)" title="Previous">caret-left</a>
+            <a class="next fa fa-caret-right" onclick="plusImages(1)" title="Next">caret-right</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- To the top button -->
+      <div class="to-the-top" title="Go to Top">
+        <button id="to-top" class="fa fa-chevron-up">
+          <span>Top</span>
+        </button>
+      </div>
+      </main>
+      <!--main section end-->
+
+      <!--footer section start-->
+      <footer>      
+
+      </footer>
+      <!--footer section end-->
+
+    </div>
+    <!--container end-->
+
+  <!-- <script src="./assets/vendor/jquery-1.8.3.min.js"></script> -->
+  <script src="./assets/js/script.js"></script>
+  </body>
+</html>
